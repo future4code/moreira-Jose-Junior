@@ -1,0 +1,2 @@
+# Aprendizados da semana
+Nessa semana introdutória ao curso da Labenu, aprendi diversas coisas novas. Os comandos iniciais de manipulação do terminal Bash, algo que pra era muito difícil, os **instrutores da Labenu** mostraram como era simples, e depois aprendi a mexer no github, confesso que este último ainda é confuso pra mim, faço as coisas, sigo os comandos e alguns deles tenho clareza para que são usados, no entanto, o procsso como um todo para mim ainda é meio nebuloso!
