@@ -23,9 +23,14 @@ function retornaArrayOrdenado(array) {
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-  array.filter((item, indice, vetor) => return item % 2 === 0
-})
-return array
+
+function par (value) {
+    if (value % 2 === 0)
+    return value;
+  }
+  
+  let par2 = array.filter(par);
+  console.log (par2);
 }
 
 // EXERCÍCIO 05
