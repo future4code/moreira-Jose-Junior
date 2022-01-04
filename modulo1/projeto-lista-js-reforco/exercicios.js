@@ -51,7 +51,7 @@ function imprimeInformacoesUsuario() {
   const nome = prompt('Digite seu nome.')
   const idade = prompt('Digite sua idade.')
   const email = prompt('Digite seu e-mail.')
-  console.log(`Meu nome é ${nome}, tenho ${idade} anos, e o meu e-mail é ${email}.`)
+  console.log(`Meu nome é ${nome}, tenho ${idade} anos, e o meu email é ${email}.`)
 
 }
 
@@ -85,7 +85,7 @@ function calculaIngressosEspetaculo(custo, valorIngresso) {
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
   // implemente sua lógica aqui
-  const condicao = string1 === string2
+  const condicao = string1.length === string2.length
   return condicao
 
 }
@@ -101,7 +101,7 @@ function retornaPrimeiroElemento(array) {
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
   // implemente sua lógica aqui
-  const primeiroElemento = array []
+  const primeiroElemento = array [array.length -1]
   return primeiroElemento
 
 }
@@ -109,6 +109,12 @@ function retornaUltimoElemento(array) {
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
+  const primeiro = array[0]
+  const ultimo = array[array.length-1]
+  const indice = array.length-1
+  array[0] = ultimo
+  array[indice]= primeiro
+  return array
   
 
 }
@@ -116,18 +122,36 @@ function trocaPrimeiroEUltimo(array) {
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
+  const stri1 = string1.toUpperCase
+  const stri2 = string2.toUpperCase
+  const condicao = stri1.length === stri2.length
+  return condicao
 
 }
 
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
   // implemente sua lógica aqui
+  const anoAtual = prompt('Digite o a no atual.')
+  const anoNascimento = prompt('Digite o ano de nascimento.')
+  const emissaoRG = prompt('Digite o ano de emissão do RG')
+
+  const cond1 = (anoAtual-anoNascimento <= 20) && (anoAtual-emissaoRG >= 5)
+  const cond2 = (20 <anoAtual-anoNascimento <= 50) && (anoAtual-emissaoRG >= 10)
+  const cond3 = (anoAtual-anoNascimento > 50) && (anoAtual-emissaoRG >= 15)
+  const cond4 = cond1 || cond2 || cond3
+  console.log(cond4)
 
 }
 
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
   // implemente sua lógica aqui
+  const ano400 = (ano % 400 === 0)
+  const ano100 = (ano % 4 === 0 && (ano % 100 === 0 && ano % 400 === 0))
+  const naoBiss = (ano400 || ano100)
+  const bissexto = ano400 && ano100 || naoBiss
+  return bissexto
 
 }
 
