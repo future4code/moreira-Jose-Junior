@@ -23,18 +23,29 @@ function retornaArrayOrdenado(array) {
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-
-function par (value) {
-    if (value % 2 === 0)
-    return value;
-  }
-  
-  let par2 = array.filter(par);
-  console.log (par2);
+function par(item){
+  return item % 2 === 0
+}
+const numerosPares = array.filter(par)
+return numerosPares
 }
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
+
+  function par(item){
+    return item % 2 === 0
+  }
+
+  const numerosPares = array.filter(par)
+
+  function quadrado(item){
+    return Math.pow(item, 2)
+   }
+
+  const numerosParesQuadrados = numerosPares.filter(quadrado)
+  
+  return numerosParesQuadrados
  
 }
 
