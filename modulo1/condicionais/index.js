@@ -22,7 +22,7 @@
   }
 */
 
-  // 2 - exercício
+  /* 2 - exercício
 
   let turno = prompt('Qual turno você estuda? Digite M para manhã, T para tarde e N para noite.')
 
@@ -32,6 +32,40 @@
       console.log("Boa Tarde!")
   } else {
       console.log("Boa Noite!")
+  }*/
+
+  /* 3 - exercício 
+
+  let turno = prompt('Qual turno você estuda? Digite M para manhã, T para tarde e N para noite.')
+
+  let saudacao
+
+  switch (turno) {
+      case "M":
+          saudacao = "Bom dia!" 
+          break;
+      case "T":
+          saudacao = "Boa tarde!"
+          break;
+      case "N":
+          saudacao = "Boa Noite!"
+          break;
+      default:
+          saudacao = "Digite M, T ou N para receber a saudação."
+          break;
   }
 
+  console.log(saudacao)
+*/
+
+// 4 - exercício
+
+const genero = prompt('Qual o gênero do filme?')
+const preco = prompt('Qual o valor do ingresso?')
+
+if(genero === "fantasia" && preco<15){
+    console.log("Bom filme!")
+} else {
+    console.log("Escolha outro filme :(")
+}
        
