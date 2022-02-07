@@ -108,6 +108,14 @@ function classificaTriangulo(ladoA, ladoB, ladoC) {
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
 
+    const arrayOrdenado = array.sort(function(a,b) {
+        return a-b
+    })
+    const segundoMenor = array[1]
+    const segundoMaior = array[array.length-2]
+    const arrayFinal = [segundoMaior,segundoMenor]
+
+    return arrayFinal
 
   
 }
@@ -115,8 +123,14 @@ function retornaSegundoMaiorESegundoMenor(array) {
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
 
+    const atoresEspaco = filme.atores.map((item, index) =>{
+        if(index === 0){ 
+            return item
+        } else {
+    return " " + item}
+   })
 
-    return `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores}.`
+    return `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${atoresEspaco}.`
    
 }
 
