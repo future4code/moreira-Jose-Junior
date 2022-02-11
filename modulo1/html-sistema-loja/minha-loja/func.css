@@ -1,7 +1,15 @@
-.neg{
+
+.neg1{
+    color: rgb(74, 202, 15);
+    padding: 2%;
+}
+
+.padrao{
     font-weight: bold;
 }
 
-.neg1{
-    color: lightblue;
+
+body{
+    background-color: rgba(176, 202, 219); 
+    text-align: center; 
 }
