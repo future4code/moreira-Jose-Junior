@@ -1,3 +1,17 @@
 .alter{
 font-weight: bold;
 }
+
+body{
+    background-color: rgba(176, 202, 219); 
+    text-align: center; 
+}
+
+.pad{
+    padding: 5%;
+
+}
+
+.sep{
+    padding: 3%;
+}

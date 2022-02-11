@@ -2,3 +2,8 @@
     font-weight: bold;
     background-color: lavender;
 }
+
+body{
+    background-color: rgba(176, 202, 219); 
+    text-align: center; 
+}

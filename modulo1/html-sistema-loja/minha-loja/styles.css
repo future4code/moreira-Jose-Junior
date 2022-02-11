@@ -1,24 +1,40 @@
 .pri-mens{
-background-color:green;
+background-color:rgb(176, 202, 219);
 }
 
+.botoes{
 
+  
+  
+ 
+}
 
 footer {
     position: absolute;
     bottom: 0;
-    background-color: rgba(81, 255, 0, 0.849);
-    color: rgba(255, 255, 255, 0.589);
     width: 100%;
-    height: 130px;    
+    height: 100px;    
     text-align: center;
-    line-height: 100px;
+    line-height: 10px;
+    
 }
 
-img{
-    max-width: 10%;
+.imaPri{
+    padding: 1%;
+    max-width: 100%;
+    margin-bottom: 6px;
 }
-mi{
-    max-width: 10%;
 
+.link img{
+    max-width: 3%;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    margin-left: 10px;
+    margin-right: 8px;
+    padding: 6%;
+}
+
+body{
+    background-color: rgba(176, 202, 219); 
+    text-align: center; 
 }
