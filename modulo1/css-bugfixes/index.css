@@ -67,17 +67,19 @@ div img {
   **/
 
 #container-de-descricao {
+    padding: 150px;
     background-color: #2274a5;
     color: white;
 }
 
 #container-de-descricao>ol {
-    padding: 15px 0px;
+    padding: 10px;
 }
 
 #container-para-comprar {
     background-color: #e7eb90;
 }
+
 
 #container-para-comprar>p {
     color: #c44f00;
