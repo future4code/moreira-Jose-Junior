@@ -4,7 +4,7 @@
   if (medPonderada >= 9){
     return ("A")
   }
-  else if (medPonderada >= 7,5){
+  else if (medPonderada >= 7.5){
     return ("B")
   }
   else if (medPonderada >= 6){
