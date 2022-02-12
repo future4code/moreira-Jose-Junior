@@ -71,8 +71,14 @@ div img {
   *
   **/
 
+.container{
+    padding: 0%;
+}
+
+
 #container-de-descricao {
-    padding: 150px;
+    padding-top: 160px;
+    padding-left: 150px;
     background-color: #2274a5;
     color: white;
 }
@@ -106,6 +112,7 @@ div:last-child {
 
 table {
     width: 60%;
+    margin-left: 25%;
 }
 
 td button {
@@ -134,6 +141,7 @@ td button {
     border-radius: 5px;
     font-size: 10px;
     color: black;
+    margin-left: 50%;
 }
 
 #back-button:hover {
