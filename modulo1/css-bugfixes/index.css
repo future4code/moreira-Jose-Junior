@@ -161,5 +161,11 @@ img{
     width: 1px;
     background-color: currentColor;
   }
+
+  .estiloBotao:hover{
+      background-color: #2274a5;
+
+  }
+
   
   
