@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.botao{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.botao  a:hover {
+    background-color:#283048;
+    padding: 10px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    transform: .5s ease-in-out;
+}
+
+header{
+    background-color: aliceblue;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-direction: column;
+}
+
+main{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.formulario{
+    padding: 40px;
+}
