@@ -5,7 +5,7 @@ import ImagemButton from './components/ImagemButton/ImagemButton';
 import eu from './components/foto/eu.jpg';
 import bio from './components/foto/bio.png';
 import CardPequeno from './components/CardPequeno/CardPequeno';
-import CardPequeno2 from './components/CardPequeno/CardPequeno2/CardPequeno2'
+import CardPequeno2 from './components/CardPequeno/CardPequeno2/CardPequeno2';
 import endereco from './components/foto/ende.jpg'
 import email1 from './components/foto/email.png'
 import styled from 'styled-components';

@@ -1,18 +1,46 @@
 import React from 'react';
-import './CardPequeno.css'
+import styled from "styled-components"
+
+const LittleCardContainer = styled.div`
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px 5px;
+    margin-bottom: 5px;
+    height: 100px;
+`;
+
+const LittleImg = styled.img`
+    width: 70px;
+    margin-right: 10px;
+    border-radius: 50%;
+`;
+
+const Littleh4 = styled.h4`
+    margin-bottom: 0px;
+    margin-right: 8px ;
+`;
+
+const LittleDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+`
+
+
 
 function CardPequeno(props) {
     return (
         <div>
-            <div className="littlecard-container">
-               <img src={props.imagem} />
-               <div>
-                <h4>E-mail:</h4>
-                </div>
-                <div>
+            <LittleCardContainer>
+               <LittleImg src={props.imagem} />
+               <LittleDiv>
+                <Littleh4>E-mail:</Littleh4>
+                </LittleDiv>
+                <LittleDiv>
                 <p>{props.endemail}</p>
-               </div>
-            </div>
+               </LittleDiv>
+            </LittleCardContainer>
         
         </div>
     )
