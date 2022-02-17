@@ -49,6 +49,7 @@ class Post extends React.Component {
   }
 
   onClickCurtida = () => {
+    this.setState({})
     console.log('Curtiu!')
   }
 
