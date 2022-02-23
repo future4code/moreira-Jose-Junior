@@ -39,11 +39,15 @@ header{
 
 .container{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     border: 20px;
 }
 
 main{
+    display: flex;
+    height: 100vh;
     padding: 10px;
+    flex-direction: column;
+    justify-content: space-around;
 }
