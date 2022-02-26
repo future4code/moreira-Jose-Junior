@@ -1,0 +1,1 @@
+export const BASE_UR = "https://cookenu-api.herokuapp.com"
