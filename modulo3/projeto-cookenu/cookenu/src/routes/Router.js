@@ -6,6 +6,8 @@ import RecipeDetailPage from "../pages/RecipeDetailPage/RecipeDetailPage"
 import RecipesListPage from "../pages/RecipesListPage/RecipesListPage"
 import SignUpPage from "../pages/SignUpPage/SignUpPage"
 import ErrorPage from "../pages/ErrorPage/ErrorPage"
+import ButtonAppBar from "../components/Header/ButtonAppBar"
+
 
 
 
@@ -13,6 +15,7 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage"
 const Router = () => {
     return(
         <BrowserRouter>
+            <ButtonAppBar/>
             <Routes>
                 <Route path='/adicionar-receita' element={<AddRecipesPage/>}/>
 
