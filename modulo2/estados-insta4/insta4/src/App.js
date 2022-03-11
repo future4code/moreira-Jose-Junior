@@ -2,23 +2,6 @@ import React from 'react';
 import styled from 'styled-components'
 import Post from './components/Post/Post';
 
-const arrayPessoas = [
-  {
-    nomeUsuario: "paulinha",
-    fotoUsuario: "https://picsum.photos/501/501",
-    fotoPost: "https://picsum.photos/201/150"
-  },
-  {
-    nomeUsuario: "robertinha",
-    fotoUsuario: "https://picsum.photos/510/510",
-    fotoPost: "https://picsum.photos/202/150"
-  },
-  {
-    nomeUsuario: "lindinha",
-    fotoUsuario: "https://picsum.photos/150/150",
-    fotoPost: "https://picsum.photos/200/151"
-  }
-]
 
 const MainContainer = styled.div`
   display: flex;
@@ -41,7 +24,23 @@ width: 15%;
 class App extends React.Component {
 
   state = {
-    pessoas: arrayPessoas,
+    pessoas: [
+      {
+        nomeUsuario: "paulinha",
+        fotoUsuario: "https://picsum.photos/501/501",
+        fotoPost: "https://picsum.photos/201/150"
+      },
+      {
+        nomeUsuario: "robertinha",
+        fotoUsuario: "https://picsum.photos/510/510",
+        fotoPost: "https://picsum.photos/202/150"
+      },
+      {
+        nomeUsuario: "lindinha",
+        fotoUsuario: "https://picsum.photos/150/150",
+        fotoPost: "https://picsum.photos/200/151"
+      }
+    ],
     novoNome: "",
     novaFoto: "",
     novaFotoPost: ""
