@@ -2,7 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 const Dados = styled.div`
-
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10px;
 
 `
 
@@ -12,19 +15,21 @@ export default class Etapa1 extends React.Component{
         nome: "",
         idade: "",
         email: "",
-        telaAtual: Etapa1
 
     }
 
-    changeNome = () => {
+    changeNome = (event) => {
+      this.setState({nome: event.target.value})
 
     };
 
-    changeIdade = () => {
+    changeIdade = (event) => {
+      this.setState ({idade: event.target.value})
 
     };
 
-    changeEmail = ()=>{
+    changeEmail = (event)=>{
+      this.setState ({email: event.target.value})
 
     }
 
@@ -69,8 +74,6 @@ export default class Etapa1 extends React.Component{
                       <option>Ensino superior completo</option>
                   </select>
                 </div>
-
-                <button onClick={this.Etapa2}>Próxima etapa</button>
 
             </Dados>
         

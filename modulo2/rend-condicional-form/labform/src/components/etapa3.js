@@ -1,4 +1,13 @@
 import React from "react";
+import styled from "styled-components"
+
+
+const Dados = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10px;
+`
 
 export default class Etapa3 extends React.Component{
     state = {
@@ -6,13 +15,14 @@ export default class Etapa3 extends React.Component{
 
     }
 
-    changeMotivo = () => {
+    changeMotivo = (event) => {
+        this.setState({motivo: event.target.value})
 
     }
 
     render () {
         return (
-            <div>
+            <Dados>
                 <h1>ETAPA - 3 INFORMAÕES GERAIS DE ENSINO</h1>
 
                 <div>
@@ -32,9 +42,7 @@ export default class Etapa3 extends React.Component{
                         <option>Outros tipos de cursos</option>
                     </select>
                 </div>
-
-                <button onClick={this.Final}>Próxima etapa</button>
-            </div>
+            </Dados>
         )
     }
 }

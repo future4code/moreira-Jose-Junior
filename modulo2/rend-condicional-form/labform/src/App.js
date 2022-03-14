@@ -1,9 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
 import './App.css';
 import Etapa1 from './components/etapa1'
 import Etapa2 from './components/etapa2';
 import Etapa3 from './components/etapa3';
 import Final from './components/final';
+
+
+const botProximaEtapa = styled.div`
+margin: auto;
+`
 
 
 export default class App extends React.Component {
@@ -30,19 +36,20 @@ export default class App extends React.Component {
         case 4:
           return <Final/>;
         default:
-          return<Final/>
+          return<div><p>ERRO! PÁGINA NÂO ENCONTRADA</p></div>
       }
 
     }
   return (
     <div>
       <div>
-      {this.renderizaTela()}
+      {renderizaTela()}
       </div>
 
-      <div>
-        {this.state.telaInicial !== 4 && (<button onClick={this.etapaSeguinte}>Próxima etapa</button>)}
-      </div>
+      <botProximaEtapa>
+        {this.state.telaInicial !== 4 && (<button onClick={this.etapaSeguinte}>
+          Próxima etapa</button>)}
+      </botProximaEtapa>
     </div>
   );
   }
