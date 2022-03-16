@@ -7,45 +7,71 @@ const formulario = styled.div`
 background-color: azure;
 `
 
+const Container = styled.div`
+
+`
+
 export default class Forms extends React.Component {
 
     state = {
-        usuario: "",
-        mensagem: ""
+        inputUsuario: "",
+        inputMensagem: "",
+
+        botEnviar: [{
+            usuario: "",
+            mensagem: ""
+        }
+        ]
 
     }
 
-    changeUsuario = (event)=> {
-        this.setState ({usuario: event.target.value})
+    changeinputUsuario = (event)=> {
+        this.setState ({inputUsuario: event.target.value})
 
     }
 
-    changeMensagem = (event) => {
-        this.setState ({mensagem: event.target.value})
+    changeinputMensagem = (event) => {
+        this.setState ({inputMensagem: event.target.value})
 
     }
 
     botaoEnviar = () => {
+        const novoBotEnviar =[...this.state.botEnviar, {usuario: this.state.inputUsuario, mensagem: this.state.inputMensagem}]
+        this.setState({botEnviar: novoBotEnviar,
+            inputUsuario: "",
+            inputMensagem: ""
+        })
 
     }
 
 
     render () {
+
+        const listaBotEnviar = this.state.botEnviar.map((enviado, indexEnviado)=>{
+            return (
+                <Container key={indexEnviado}>
+                    <span>enviado.usuario</span>
+                    <span>enviado.mensagem</span>
+                </Container>
+            )
+        })
+
         return (
             <formulario>
                 <input
                 placeholder="Usuário"
-                value={this.state.usuario}
-                onChange={this.changeUsuario}
+                value={this.state.inputUsuario}
+                onChange={this.changeinputUsuario}
                 />
 
                 <input
                 placeholder="Mensagem"
-                value={this.state.mensagem}
-                onChange={this.changeMensagem}
+                value={this.state.inputMensagem}
+                onChange={this.changeinputMensagem}
                 />
 
-                <button>Enviar</button>
+                <button onClick={this.botaoEnviar}>Enviar</button>
+                {listaBotEnviar}
             </formulario>
         )
     }
