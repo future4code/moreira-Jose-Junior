@@ -4,12 +4,10 @@ import styled from "styled-components";
 
 
 const formulario = styled.div`
-background-color: azure;
+border: 5px;
 `
 
-const Container = styled.div`
 
-`
 
 export default class Forms extends React.Component {
 
@@ -49,15 +47,16 @@ export default class Forms extends React.Component {
 
         const listaBotEnviar = this.state.botEnviar.map((enviado, indexEnviado)=>{
             return (
-                <Container key={indexEnviado}>
-                    <span>enviado.usuario</span>
-                    <span>enviado.mensagem</span>
-                </Container>
+                <div key={indexEnviado}>
+                    <span><b>{enviado.usuario}</b></span>
+                    <span>{enviado.mensagem}</span>
+                </div>
             )
         })
 
         return (
             <formulario>
+                {listaBotEnviar}
                 <input
                 placeholder="Usuário"
                 value={this.state.inputUsuario}
@@ -71,7 +70,6 @@ export default class Forms extends React.Component {
                 />
 
                 <button onClick={this.botaoEnviar}>Enviar</button>
-                {listaBotEnviar}
             </formulario>
         )
     }
