@@ -15,11 +15,7 @@ export default class Forms extends React.Component {
         inputUsuario: "",
         inputMensagem: "",
 
-        botEnviar: [{
-            usuario: "",
-            mensagem: ""
-        }
-        ]
+        botEnviar: []
 
     }
 
@@ -48,7 +44,7 @@ export default class Forms extends React.Component {
         const listaBotEnviar = this.state.botEnviar.map((enviado, indexEnviado)=>{
             return (
                 <div key={indexEnviado}>
-                    <span><b>{enviado.usuario}</b></span>
+                    <span><b>{enviado.usuario} : </b></span>
                     <span>{enviado.mensagem}</span>
                 </div>
             )
