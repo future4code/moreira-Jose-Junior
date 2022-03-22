@@ -37,10 +37,15 @@ class App extends React.Component {
     }
 
   componentDidUpdate() {
+    const novaTarefa = this.state.tarefas
+    localStorage.setItem("tarefa", JSON.stringify(novaTarefa))
 
   };
 
   componentDidMount() {
+    const novaTarefa = localStorage.getItem("tarefa")
+    const tarefaObjeto = JSON.parse(novaTarefa)
+    this.setState({tarefas: tarefaObjeto})
 
   };
 
@@ -80,6 +85,7 @@ class App extends React.Component {
   }
 
   onChangeFilter = (event) => {
+    this.setState({filtro: event.target.value})
 
   }
 
