@@ -8,6 +8,9 @@
     "start": "tsc && node ./build/index.js"
   },
   "keywords": [],
-  "author": "Antonio Júnior",
-  "license": "ISC"
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
 }
