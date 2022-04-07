@@ -89,6 +89,6 @@ WHERE data_Lancamento < "2020-05-04";```
 
 d) ```SELECT * FROM Filme
 WHERE data_Lancamento < "2020-05-04" AND 
-      (titulo LIKE "%TERMO DE BUSCA%" OR
-      sinopse LIKE "%TERMO DE BUSCA%") AND rating > 7;```
+      (titulo LIKE "%Você%" OR
+      sinopse LIKE "%Você%") AND rating > 7;```
 
