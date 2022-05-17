@@ -1,16 +1,13 @@
 {
-  "name": "package-json",
+  "name": "exe1",
   "version": "1.0.0",
   "description": "",
   "main": "exe1.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./exe1.js",
-    "start":"node ./exe2.js",
-    "start": "node ./exe3.js"
+    "start": "node ./exe1.js"
   },
   "keywords": [],
-  "author": "Antonio Júnior",
+  "author": "",
   "license": "ISC"
 }
